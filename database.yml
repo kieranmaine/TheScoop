@@ -1,0 +1,60 @@
+users:
+  kieran:
+    username: kieran
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+      - 2
+  thedude:
+    username: thedude
+    articleIds: []
+    commentIds: []
+articles:
+  '1':
+    id: 1
+    title: 'Android vendors, don’t kill my app PLEASE'
+    url: 'https://dontkillmyapp.com/'
+    username: kieran
+    commentIds:
+      - 1
+      - 2
+    upvotedBy:
+      - kieran
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        articleId: 1
+        body: This is a new comment
+        upvotedBy:
+          - thedude
+          - kieran
+        downvotedBy: []
+        username: kieran
+      - &ref_1
+        id: 2
+        articleId: 1
+        body: And this is another comment
+        upvotedBy:
+          - thedude
+        downvotedBy:
+          - kieran
+        username: kieran
+  '2':
+    id: 2
+    title: 'AWS, MongoDB, and the Economic Realities of Open Source'
+    url: >-
+      https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/
+    username: kieran
+    commentIds: []
+    upvotedBy: []
+    downvotedBy:
+      - kieran
+      - thedude
+nextArticleId: 3
+comments:
+  '1': *ref_0
+  '2': *ref_1
+nextCommentId: 3
