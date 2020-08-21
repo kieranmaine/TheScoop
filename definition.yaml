@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TheScoop
+  description: A test website
+  labels:
+    system: public-websites
+  annotations:
+    example.com/service-discovery: artistweb    
+  tags:
+    - javascript
+spec:
+  type: website
+  lifecycle: production
+  owner: nobody@nobody.nobody
